@@ -58,47 +58,49 @@
   </style>
 </head>
 <body>
-    <h1 class="center-title">Proyecto ASTR MOVIL</h1>
+    <h1 class="center-title">Proyecto Rick and Morty</h1>
 
     <!-- Galería de imágenes -->
     <div class="gallery2">
       <div class="gallery2-item">
-        <img src="./image/astr/astr1.jpeg" alt="img 1">
+        <img class="myImage" src="../image/" alt="img 1">
       </div>
       <div class="gallery2-item">
-        <img src="./image/astr/astr2.jpeg" alt="img 2">
+        <img class="myImage" src="../image/" alt="img 2">
       </div>
       <div class="gallery2-item">
-        <img src="./image/astr/astr3.jpeg" alt="img 3">
+        <img class="myImage" src="../image/astr/astr3.jpeg" alt="img 3">
       </div>
       <div class="gallery2-item">
-        <img src="./image/astr/astr4.jpeg" alt="img 4">
+        <img class="myImage" src="../image/astr/astr4.jpeg" alt="img 4">
       </div>
       <div class="gallery2-item">
-        <img src="./image/astr/astr5.jpeg" alt="img 5">
+        <img class="myImage" src="../image/astr/astr5.jpeg" alt="img 5">
       </div>
     </div>
     <div class="descripcion">
-      <h3>ASTR </h3>
+      <h3>Rick and Morty </h3>
       <p>
-        Es una aplicación Android que permite a los vendedores de una distribuidora de alimentos cargar preventas desde sus smartphones o tablets. La aplicación reemplaza a una app obsoleta y se conecta a la base de datos del ERP (Empresarial Resource Planning) de la empresa a través de una pequeña API REST construida con Node.js, Express, TypeScript y Sequelize.
-        
-        La API REST define los endpoints GET necesarios para que la aplicación cargue productos, vendedores y clientes. También define los endpoints POST que modificarán la base de datos y cargarán las preventas.
-        
-        La aplicación React Native carga los datos actualizados (precios, stock, saldos) y los almacena en una base de datos SQLite para poder trabajar sin conexión. La aplicación también permite:
+        Es una aplicación 
       </p>
-      <ul>
-        <li>
-          Inicio de sesión del vendedor.
-        </li>
-        <li>
-          Carga de preventas a los clientes.
-        </li>
-        <li>
-          Envío de las preventas al ERP.
-        </li>
-      </ul>
+
     </div>
 
 </body>
 </html>
+<script>
+    var images = document.getElementsByClassName("myImage");
+    for (var i = 0; i < images.length; i++) {
+      images[i].onclick = function() {
+        if (this.requestFullscreen) {
+          this.requestFullscreen();
+        } else if (this.mozRequestFullScreen) {
+          this.mozRequestFullScreen();
+        } else if (this.webkitRequestFullscreen) {
+          this.webkitRequestFullscreen();
+        } else if (this.msRequestFullscreen) {
+          this.msRequestFullscreen();
+        }
+      };
+    }
+  </script>
