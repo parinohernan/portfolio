@@ -21,8 +21,17 @@
     <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Rubik+Distressed&display=swap" rel="stylesheet">
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BEEHJ60MBS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BEEHJ60MBS');
+</script>
   <body>
     <!-- barra de navegacion -->
     <nav class="navbar navbar-expand-md navbar-ligth">
@@ -34,16 +43,16 @@
             <a class="navbar-brand " href="#"><img src="image/Dev_Logo.png" width="50" alt="logo de la pagina web"></a>
             <ul class="navbar-nav d-flex justify-content-center aling-items-center">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Sobre mi</a>
+                <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mi</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Proyectos</a>
+                <a class="nav-link" href="#proyectos">Proyectos</a>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link" href="#">Tetimonios</a>
-              </li>
+              </li> -->
               <li class="nav-item">
-                <a class="nav-link" href="#">Contacto</a>
+                <a class="nav-link" href="#contacto">Contacto</a>
               </li>
             </ul>
           </div>
@@ -63,7 +72,7 @@
     </section>
 
     <!-- Seccion Sobre Mi -->
-    <section class="sobre-mi seccion-oscura">
+    <section id="sobre-mi" class="sobre-mi seccion-oscura">
         <div class="contenedor">
             <h2 class="seccion-titulo">Conoce a Hernan Parino</h2>
             <p class="seccion-texto">Soy Hern fullstack con experiencia en la creación de soluciones web innovadoras. Trabajo tanto en el frontend, como el backend. Mi objetivo es seguir creciendo como profesional y contribuir al éxito de proyectos desafiantes.</p>
@@ -72,7 +81,7 @@
     </section>
 
     <!-- seccion experiencia -->
-    <section class="experiencia seccion-clara">
+    <section id="experiencia" class="experiencia seccion-clara">
         <div class="conteiner text-center">
             <div class="row">
                 <!-- desarrollo web -->
@@ -126,7 +135,7 @@
     </section>
 
     <!-- seccion Proyectos -->
-    <section class="proyectos-recientes seccion-clara d-flex flex-column">
+    <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
         <h2 class="seccion-titulo texto-negro">Mis Proyectos</h2>
         <h3 class="seccion-descripcion">Estos son algunos proyectos que he recientemente</h3>
         <!-- Galeria de proyectos -->
@@ -160,7 +169,7 @@
                   <img src="image/rym precentacion.jpg" alt="rick and morty">
                   <div class="overlay">
                     <p>Rick and Morty</p>
-                    <span>Consulta personajes de la serie</span>
+                    <span>Cards de personajes de la serie</span>
                     <div class="iconos-contenedor">
                       <a href="https://github.com/parinohernan/rick_and_morty" target="_blank" rel="noopener noreferrer">
                         <i class="bi bi-github"></i>
@@ -203,11 +212,12 @@
                   <img src="image/astr/vendedor.png" alt="astr movil">
                   <div class="overlay">
                     <p>Astr Movil</p>
+                    <samp>Aplicacion movil de preventas</samp>
                     <div class="iconos-contenedor">
                       <a href="https://github.com/parinohernan/ASTR-movile-01" target="_blank" rel="noopener noreferrer">
                         <i class="bi bi-github"></i>
                       </a>
-                      <a href="./galerias/carrusel4.html" target="_blank" rel="noopener noreferrer">
+                      <a href="./galerias/astr.html" target="_blank" rel="noopener noreferrer">
                         <i class="bi bi-images"></i>
                       </a>
                       <!-- <a href="https://henrycountries-iota.vercel.app/" target="_blank" rel="noopener noreferrer">
@@ -217,49 +227,46 @@
                 </div>
                 </div>
             </div>
-<!--               
-             
-              <div class="col-12 col-md-5 col-lg-4">
-                <div class="proyecto">
-                  <img src="image/hc presentacion.jpg" alt="henry countries">
-                  <div class="overlay">
-                    <p>Henry Countries</p>
-                    <div class="iconos-contenedor">
-                      <a href="https://github.com/parinohernan/cr-pi-countries-main" target="_blank" rel="noopener noreferrer">
-                        <i class="bi bi-github"></i>
-                      </a>
-                      <a href="https://henrycountries-iota.vercel.app/" target="_blank" rel="noopener noreferrer">
-                        <i class="bi bi-laptop"></i>
-                      </a>
-                    </div>
-                </div>
-                </div>
-            </div>
-
-            
-                <div class="col-12 col-md-5 col-lg-4">
-                  <div class="proyecto">
-                    <img src="image/hc presentacion.jpg" alt="henry countries">
-                    <div class="overlay">
-                      <p>Henry Countries</p>
-                      <div class="iconos-contenedor">
-                        <a href="https://github.com/parinohernan/cr-pi-countries-main" target="_blank" rel="noopener noreferrer">
-                          <i class="bi bi-github"></i>
-                        </a>
-                        <a href="https://henrycountries-iota.vercel.app/" target="_blank" rel="noopener noreferrer">
-                          <i class="bi bi-laptop"></i>
-                        </a>
-                      </div>
-                  </div>
-                  </div>
-              </div>
-              
-             
-
-            </div>  /-->
         </div>
 
+    </section >
+    <!-- Contacto -->
+    <section id="contacto" class="contacto seccion-oscura">
+      <div class = "container">
+        <div class="container text-center rectangulo d-flex justify-content-eventy">
+          <div class="row">
+            <div class="col-12 col-md-4 seccion-titulo">
+              Hablemos
+            </div>
+            <div class="col-12 col-md-4 descripcion">
+              Contactame para iniciar tu proyecto de desarrolla web y lo hare realidad.
+            </div>
+            
+            <div class="col-12 col-md-4 ">
+              <a href="mailto:parinohernan@gmail.com">
+              <button type="button">Contacto <i class="bi bi-envelope-check-fill"></i></button>  
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+    <!-- footer -->
+    <footer class="seccion-oscura d-flex flex-column aling-items-center justify-content-center ">
+      <div class="d-flex aling-items-center justify-content-center ">
+
+        <img class="footer-logo" src="image/Dev_Logo.png" alt="logo del portafolio">
+      </div>
+      <p class="footer-texto text-center">Evolucionando día a día.<br/>Trabajemos juntos</p>
+      <div class="iconos-redes-sociales d-flex flex-wrap aling-items-center justify-content-center ">
+        <a href="https://github.com/parinohernan" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
+        <a href="https://twitter.com/HernanParino" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://www.linkedin.com/in/hernan-parino/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+        <a href="mailto:parinohernan@gmail.com" target="_blank" rel="noopener noreferrer"><i class="bi bi-envelope"></i></a>
+      </div>
+      <div class="derechos-de-autor d-flex aling-items-center justify-content-center">Creado por Juan Hernan Parino &#169;</div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 </html>
