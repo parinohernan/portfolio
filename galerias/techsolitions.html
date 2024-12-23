@@ -52,18 +52,13 @@
       }
 
       .gallery2-item {
-        /* border: 4px solid orange; */
-        width: 20%;
-        min-width: 300px;
-        height: 70%;
-        overflow: hidden;
         padding: 4px;
-        border-radius: 8px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
       }
 
       .gallery2-item img {
-        max-width: 300px;
+        max-width: 500px;
+        padding: 4px;
       }
 
       .descripcion {
@@ -72,46 +67,68 @@
     </style>
   </head>
   <body>
-    <h1 class="center-title">Proyecto ASTR MOVIL</h1>
+    <h1 class="center-title">Proyecto Henry Countries</h1>
 
     <!-- Galería de imágenes -->
     <div class="gallery2">
       <div class="gallery2-item">
-        <img src="../image/astr/astr1.jpeg" alt="img 1" />
-      </div>
-      <div class="gallery2-item">
-        <img src="../image/astr/astr2.jpeg" alt="img 2" />
-      </div>
-      <div class="gallery2-item">
-        <img src="../image/astr/astr3.jpeg" alt="img 3" />
+        <a href="../image/techsolutions/landing.png" target="_blank">
+        <img
+          class="myImage"
+          src="../image/techsolutions/landing.png"
+          alt="img 1"
+        />
       </div>
       <!-- <div class="gallery2-item">
-        <img src="../image/astr/astr4.jpeg" alt="img 4">
-      </div> -->
-      <div class="gallery2-item">
-        <img src="../image/astr/astr5.jpeg" alt="img 5" />
+        <img class="myImage" src="../image/hc/hc2.png" alt="img 2" />
       </div>
+      <div class="gallery2-item">
+        <img class="myImage" src="../image/hc/hc3.png" alt="img 3" />
+      </div>
+      <div class="gallery2-item">
+        <img class="myImage" src="../image/hc/hc4.png" alt="img 4" />
+      </div> -->
     </div>
     <div class="descripcion">
-      <h3>ASTR</h3>
+      <a href="https://tech-solutions-demo.netlify.app/" target="_blank">
+        <h3>Tech Solutions</h3>
+
+      </a>
       <p>
-        Es una aplicación Android que permite a los vendedores de una
-        distribuidora de alimentos cargar preventas desde sus smartphones o
-        tablets. La aplicación reemplaza a una app obsoleta y se conecta a la
-        base de datos del ERP (Empresarial Resource Planning) de la empresa a
-        través de una pequeña API REST construida con Node.js, Express,
-        TypeScript y Sequelize. La API REST define los endpoints GET necesarios
-        para que la aplicación cargue productos, vendedores y clientes. También
-        define los endpoints POST que modificarán la base de datos y cargarán
-        las preventas. La aplicación React Native carga los datos actualizados
-        (precios, stock, saldos) y los almacena en una base de datos SQLite para
-        poder trabajar sin conexión. La aplicación también permite:
+        Landing page moderna y responsive desarrollada con Astro.js, diseñada
+        para mostrar servicios y soluciones tecnológicas empresariales.
       </p>
       <ul>
-        <li>Inicio de sesión del vendedor.</li>
-        <li>Carga de preventas a los clientes.</li>
-        <li>Envío de las preventas al ERP.</li>
+        <li>Desarrollo de componentes interactivos utilizando React.</li>
+        <li>
+          Implementación de estilos modernos y responsive utilizando Tailwind
+          CSS.
+        </li>
+        <li>
+          Integración de formulario de contacto funcional mediante Formspree.
+        </li>
+        <li>Optimización SEO y despliegue continuo en Netlify.</li>
       </ul>
+      <p><strong>Frontend:</strong> Astro.js, React, Tailwind CSS</p>
+      <!-- <p>
+        <strong>Integraciones:</strong> Hugging Face (IA), Formspree, Netlify
+      </p> -->
     </div>
   </body>
+  <script>
+    var images = document.getElementsByClassName("myImage");
+    for (var i = 0; i < images.length; i++) {
+      images[i].onclick = function () {
+        if (this.requestFullscreen) {
+          this.requestFullscreen();
+        } else if (this.mozRequestFullScreen) {
+          this.mozRequestFullScreen();
+        } else if (this.webkitRequestFullscreen) {
+          this.webkitRequestFullscreen();
+        } else if (this.msRequestFullscreen) {
+          this.msRequestFullscreen();
+        }
+      };
+    }
+  </script>
 </html>
